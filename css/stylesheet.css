@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/* global styles */
+
+body {
+    font-family: 'Asap Condensed', sans-serif;
+    background-color: #f4f4f4;
+    color: #001427;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.7rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #233da3;
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 2.0;
+    font-size: 1.2rem;
+}
+
+article {
+    width: 80%;
+    margin: 10% auto;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    font-size: 1.3rem;
+    line-height: 2.0;
+}
+
+
+/* desktop global styles */
+header {
+    color: #001427;
+    width: 100%;
+    clear: both;
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    
+}
+
+.logo-container {
+    width: 5%;
+    height: auto;
+    float: left;
+    margin: 1% 5%;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: none;
+}
+
+.display-nav {
+    text-align: right;
+    padding: 3%;
+}
+
+.display-nav a {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 20px;
+    color: #001427;
+}
+
+.toggle {
+    display: none;
+}
+
+/* contact page */
+
+.contact{
+    width: 90%;
+    margin: 10% auto;
+}
+
+form {
+    margin: auto;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #233da3;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 20px;
+    width: 10%;
+    padding: 8px;
+    background-color: #233da3;
+    color: #eeeded;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+
+textarea {
+    height: 200px;
+}
+
+/* media page */
+.media, .sermons {
+    width: 90%;
+    margin: 10% auto;
+}
+
+/* executives page */
+
+
+
+.executives {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.exco-container {
+    width: 50%;
+    margin: 15px auto;
+    
+    
+}
+
+.img-container {
+    width: 25%;
+    height: 35%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.exco-img{
+    height: 100%;
+    width: 100%;
+}
+
+.tag {
+    width: 25%;
+    text-align: center;
+}
+
+.tag p{
+    line-height: 1.2;
+    font-size: 0.8rem;
+    margin: 0 0 4px 0;
+}
+
+
+/* Calendar */ 
+.calendar {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.event-container {
+    display: flex;
+    width: 500px;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.event-title {
+    width: 300px;
+    text-align: center;
+    
+    
+}
+
+.date-time {
+    width: 200px;
+    text-align: center;
+}
+
+.date-time img {
+    width: 10%;
+    padding-top: 10px;
+}
+
+.date-time p {
+    margin:0;
+}
+
+.white {
+    background-color: #fff;
+    box-shadow: 1px 0px 5px#233da3;
+}
+
+
+/* footer */
+footer {
+    background-color: rgb(245, 172, 71);
+    color: #eeeded;
+    text-align: center;
+    padding: 20px;
+}
+footer h2, h3 {
+    color: #001427  
+ }
+
+ footer img {
+     width: 2%;
+     margin: 10px;
+ }
+
+ footer img:hover {
+    width: 2.5%;
+}
+
+/* dropdown */
+    
+.toggle ul {
+    list-style: none;
+    text-align: right;
+    text-align: center;
+}
+
+.toggle li { 
+    padding: 10px;
+    border-bottom: 1px solid #eeeded;
+    color: #080357;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.toggle a {
+    cursor: pointer;
+}
+
+.toggle {
+    width: 40vw;
+    position: absolute;
+    right: 0;
+    z-index: 15;
+    background-color: #FF9F1C;
+    display: none;
+}
+
+#close {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 799px) {
+    .display-nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: 5%;
+        position: absolute;
+        right: 0;
+        margin-right: 8%;
+        margin-top: 3%;
+    }
+
+    .media, .calendar, .contact, .about {
+        margin-top: 20%;
+    }
+
+    .logo-container {
+        width: 10%;
+    }
+
+    .event-container {
+        width: 300px;
+    }
+
+    .event-container p {
+        font-size: 0.9rem;
+    }
+
+    .date-time img {
+        width: 18%;
+    }
+
+    .event-title {
+        width: 200px;
+    }
+
+    .date-time {
+        width: 100px;
+    }
+
+    input[type=submit] {
+        width: 20%;
+    }
+
+    footer img{
+        width: 7%;
+    }
+
+    input[type=text], input[type=email], textarea {
+        width: 90%;
+    }
+}

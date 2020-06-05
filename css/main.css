@@ -1,0 +1,344 @@
+@media only screen and (max-width: 799px){
+    * {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    /* global styles */
+    
+    body {
+        font-family: 'Asap Condensed', sans-serif;
+        background-color: #f4f4f4;
+        color: #001427;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 0.7rem;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: #233da3;
+    }
+    
+    /* header styles  and navigation*/
+    
+    
+    .display-nav {
+        display: none;
+    }
+    
+    .menu-container {
+        width: 7%;
+        position: absolute;
+        right: 0;
+        overflow: hidden;  
+        margin-right: 5%; 
+        margin-top: 3%;
+        cursor: pointer;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    
+    header {
+        color: #001427;
+        width: 100%;
+        height: 50vh;
+        clear: both;
+    }
+    
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../images/showcase2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        z-index: -4;
+        opacity: 0.5;
+    }
+    
+    .logo-container {
+        width: 15%;
+        height: auto;
+        float: left;
+        margin: 1% 5%;
+    }
+    
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    
+    .pri-header {
+        text-align: center;
+        margin: 10% auto auto auto;
+        color: #eeeded;
+    }
+    
+    .pri-header h1 {
+        font-size: 2rem;
+        color: #eeeded;
+    }
+    
+    .pri-header h2 {
+        font-size: 1.3rem;
+        color: #eeeded;
+    }
+    
+    .pri-header h3 {
+        font-size: 1rem;
+        color: #eeeded;
+    }
+    
+    .who-we-are {
+        width: 30%;
+        height: auto;
+        margin: 3% auto;
+        padding: 10px;
+        border-radius: 30px;
+        border: none;
+        background-color: #233da3;
+        cursor: pointer;
+        
+    }
+    
+    .who-we-are a {
+        color: #FF9F1C;
+        font-family: 'Asap Condensed', sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .who-we-are:hover {
+        background-color: transparent;
+        color: #eeeded;
+        border: 2px solid #FF9F1C;
+        transition: background-color 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    
+    
+    /* dropdown */
+    
+    .toggle ul {
+        list-style: none;
+        text-align: right;
+        text-align: center;
+    }
+    
+    .toggle li { 
+        padding: 20px;
+        border-bottom: 1px solid #eeeded;
+        color: #080357;
+        cursor: pointer;
+    }
+    
+    .toggle a {
+        cursor: pointer;
+    }
+    
+    .toggle {
+        width: 40vw;
+        position: absolute;
+        right: 0;
+        z-index: 15;
+        background-color: #FF9F1C;
+        display: none;
+    }
+    
+    #close {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* NLCF WHO WE ARE */
+    
+    .gray {
+        background-color: #fff;
+        width: 100%;
+    }
+    
+    .identity {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+    
+    .identity article {
+        display: block;
+        text-align: justify;
+        margin: auto;
+    }
+    
+    .identity article p {
+        line-height: 1.5;
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+    
+    .identity h2 {
+        color: #233da3;
+        font-size: 1.3rem; 
+    }
+    
+    .container {
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    /* Executives pane */
+    
+    .exco-wrapper {
+        margin: 0 auto;
+        background-color: #eeeded;
+    }
+    
+    .exco {
+        margin: auto;
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .exco h2 {
+        font-size: 1.3rem;
+    }
+    
+    .exco-container p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .exco-flex {
+       display: block;
+       width: 80%;
+       margin: 0 auto;
+    }
+    
+    .exco-container {
+       width: 100%;
+       margin: 15% auto;
+       text-align: center;
+    }
+    
+    .img-container {
+       width: 70%;
+       height: 80%;
+       border-radius: 100%;
+       overflow: hidden;
+       margin: auto;
+    }
+    
+    .exco-img{
+       height: 100%;
+       width: 100%;
+    }
+    
+    .exco .btn {
+       width: 60%;
+       background-color: #192d7c;
+       text-align: center;
+       padding: 9px;
+       margin: 5px auto;
+       
+    }
+    
+    .exco .btn a {
+       color: #FF9F1C;
+       font-weight: 600;
+       font-size: 0.9rem;
+    }
+    
+    
+    .tag {
+        width: 60%;
+        border: 2px solid #233da3;
+        border-radius: 10px;
+        color: #233da3;
+        text-align: center;
+        padding: 5px;
+        margin: 5px auto;
+        font-size: 0.8rem;
+    }
+    
+
+    /* wrapper pane events... */
+    
+    .flex-container {
+        display: block;
+    }
+    
+    .flex-item {
+        background-color: #fff;
+        
+        padding: 40px 20px;
+        cursor: pointer;
+    }
+    
+    .flex-item img {
+     width: 20%;
+     margin: 0 auto;
+    }
+    
+    .word {
+        background-color: #eeeded;
+        text-align: center;
+    }
+    .word p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .program {
+        background-color: #fff;
+        text-align: center;
+    }
+    
+    .blog {
+     background-color: #eeeded;
+     text-align: center;
+    }
+    
+     .podcast {
+     background-color: #fff;
+     text-align: center;
+    }
+    
+    
+    /* footer */
+    footer {
+        background-color: rgb(245, 172, 71);
+        color: #eeeded;
+        text-align: center;
+        padding: 20px;
+    }
+    footer h2, h3 {
+        color: #001427  
+     }
+    
+     footer img {
+         width: 8%;
+         margin: 10px;
+     }
+    
+     footer img:hover {
+         width: 8.5%;
+     }
+    
+}
