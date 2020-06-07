@@ -19,7 +19,18 @@ a {
 h1, h2, h3 {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #233da3;
-    
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 p {
@@ -224,7 +235,8 @@ footer {
     padding: 20px;
 }
 footer h2, h3 {
-    color: #001427  
+    color: #001427;
+    font-size: 1rem;
  }
 
  footer img {
